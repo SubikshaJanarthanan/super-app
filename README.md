@@ -1,16 +1,98 @@
-# React + Vite
+# Super App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-feature React application built using React + Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User Registration
+- Category Selection
+- Dashboard
+- Weather Widget (OpenWeather API)
+- News Widget (News API)
+- Countdown Timer
+- Notes Widget (Local Storage)
+- Movie Recommendation System (OMDb API)
+- Responsive UI
+- State Management using Zustand
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- Zustand
+- Axios
+- CSS Modules
 
-## Expanding the ESLint configuration
+## APIs Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- OpenWeather API
+- News API
+- OMDb API
+
+## Project Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── routes/
+ ├── services/
+ ├── store/
+ ├── widgets/
+ ├── App.jsx
+ └── main.jsx
+```
+
+## Installation
+
+```bash
+git clone https://github.com/SubikshaJanarthanan/super-app.git
+
+cd super-app
+
+npm install
+
+npm run dev
+```
+
+## Analysis
+
+### Objective
+
+To develop a responsive multi-feature web application that combines productivity and entertainment in a single dashboard.
+
+### Modules
+
+- Registration Module
+- Category Selection
+- Dashboard
+- Weather Module
+- News Module
+- Timer Module
+- Notes Module
+- Movie Recommendation Module
+
+### State Management
+
+The application uses Zustand to store user information and selected categories.
+
+### APIs
+
+Weather data is fetched using OpenWeather API.
+
+News is fetched using News API.
+
+Movie recommendations are fetched using OMDb API.
+
+### Local Storage
+
+Notes are stored locally so they persist after refreshing the browser.
+
+### Responsive Design
+
+The application is fully responsive and works across desktop, tablet, and mobile devices.
+
+## GitHub Repository
+
+https://github.com/SubikshaJanarthanan/super-app
