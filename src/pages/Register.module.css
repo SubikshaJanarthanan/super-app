@@ -1,0 +1,160 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* ── Left decorative panel ── */
+.art {
+  flex: 1;
+  background: linear-gradient(135deg, #6c63ff 0%, #3b2dbf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: white;
+}
+
+.artContent {
+  max-width: 360px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+}
+
+.art h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 1rem;
+}
+
+.art p {
+  font-size: 1rem;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+}
+
+.dots span:first-child { background: white; }
+
+/* ── Right form panel ── */
+.formPanel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #f5f6fa;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+  color: #1a1a2e;
+}
+
+.subheading {
+  color: #888;
+  font-size: 0.92rem;
+  margin: 0 0 2rem;
+}
+
+/* ── Fields ── */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.field label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.field input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fafafa;
+}
+
+.field input:focus {
+  border-color: #6c63ff;
+  background: white;
+}
+
+.inputError {
+  border-color: #e74c3c !important;
+}
+
+.errorText {
+  font-size: 0.78rem;
+  color: #e74c3c;
+  margin-top: 0.35rem;
+}
+
+/* ── Submit button ── */
+.submitBtn {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.5rem;
+  background: linear-gradient(135deg, #6c63ff, #3b2dbf);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(108,99,255,0.4);
+}
+
+.submitBtn:active { transform: translateY(0); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .page { flex-direction: column; }
+  .art { padding: 2.5rem 1.5rem; }
+  .art h1 { font-size: 1.8rem; }
+}

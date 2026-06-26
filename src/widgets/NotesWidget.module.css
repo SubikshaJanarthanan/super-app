@@ -1,0 +1,32 @@
+.widget { height: 100%; display: flex; flex-direction: column; gap: 0.7rem; }
+.header { display: flex; justify-content: space-between; align-items: center; }
+.title  { margin: 0; font-size: 1rem; font-weight: 700; color: #1a1a2e; }
+
+.clear {
+  font-size: 0.75rem;
+  color: #e74c3c;
+  background: #fff0f0;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.area {
+  flex: 1;
+  min-height: 140px;
+  resize: none;
+  border: 1.5px solid #e8e8f0;
+  border-radius: 12px;
+  padding: 0.8rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #1a1a2e;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  background: #fafafa;
+}
+.area:focus { border-color: #6c63ff; background: white; }
+
+.saved { font-size: 0.72rem; color: #aaa; margin: 0; }

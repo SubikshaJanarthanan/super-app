@@ -1,0 +1,70 @@
+.page {
+  min-height: 100vh;
+  background: #f0f2f9;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navBrand { font-size: 1.2rem; font-weight: 800; color: #6c63ff; }
+
+.navLinks { display: flex; gap: 0.5rem; }
+.navLinks button {
+  padding: 0.45rem 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.navLinks button:hover { background: #f0f0f8; color: #6c63ff; }
+.navActive { background: #ede9ff !important; color: #6c63ff !important; }
+
+.main { padding: 2rem; max-width: 1280px; margin: 0 auto; }
+
+.heading { font-size: 1.8rem; font-weight: 800; color: #1a1a2e; margin: 0 0 0.3rem; }
+.sub     { color: #888; font-size: 0.95rem; margin: 0 0 2rem; }
+.state   { color: #aaa; }
+
+.section { margin-bottom: 2.5rem; }
+
+.genreTitle { margin: 0 0 1rem; }
+.genrePill  {
+  background: linear-gradient(135deg, #6c63ff, #3b2dbf);
+  color: white;
+  padding: 0.35rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.row {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding-bottom: 0.8rem;
+  scrollbar-width: thin;
+}
+
+.empty { color: #aaa; font-size: 0.88rem; }
+
+@media (max-width: 640px) {
+  .nav { padding: 0 1rem; }
+  .main { padding: 1rem; }
+  .heading { font-size: 1.3rem; }
+}

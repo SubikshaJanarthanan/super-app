@@ -1,0 +1,42 @@
+.widget  { height: 100%; display: flex; flex-direction: column; gap: 0.7rem; }
+.header  { display: flex; justify-content: space-between; align-items: center; }
+.title   { margin: 0; font-size: 1rem; font-weight: 700; color: #1a1a2e; }
+.counter { font-size: 0.75rem; color: #aaa; font-weight: 600; }
+.state   { color: #aaa; font-size: 0.9rem; }
+.error   { color: #e74c3c; font-size: 0.85rem; }
+
+.img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.headline {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.source { font-size: 0.72rem; color: #aaa; font-weight: 600; margin: 0; }
+
+.dots    { display: flex; gap: 5px; justify-content: center; margin-top: auto; }
+.dot     { width: 7px; height: 7px; border-radius: 50%; background: #e0e0e0; cursor: pointer; }
+.dotActive { width: 20px; border-radius: 4px; background: #6c63ff; }
+

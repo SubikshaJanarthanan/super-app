@@ -1,0 +1,55 @@
+.widget  { height: 100%; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.title   { margin: 0; font-size: 1rem; font-weight: 700; color: #1a1a2e; align-self: flex-start; }
+
+.inputs  { display: flex; align-items: center; gap: 0.6rem; font-size: 1.2rem; color: #aaa; }
+
+.display { display: flex; justify-content: center; width: 100%; }
+
+/* Circular ring (CSS conic-gradient trick) */
+.ring {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#6c63ff var(--pct, 0%), #eee var(--pct, 0%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ring::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+}
+
+.time {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: 1px;
+}
+
+.doneMsg { color: #e74c3c; font-weight: 700; font-size: 0.95rem; margin: 0; }
+
+.controls { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; }
+
+.btnStart, .btnPause, .btnReset {
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.btnStart { background: #6c63ff; color: white; }
+.btnPause { background: #ffa502; color: white; }
+.btnReset { background: #f5f6fa; color: #555; }
+.btnStart:hover, .btnPause:hover, .btnReset:hover { transform: translateY(-1px); }
+
